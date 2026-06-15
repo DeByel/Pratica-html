@@ -1,0 +1,198 @@
+/* tem que facilitar leitura e estudo né pae*/
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    border-bottom: 3px solid #3498db;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+h2 {
+    color: #3498db;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #2ecc71;
+}
+
+h4 {
+    background-color: #e4c978;
+    color: #3e3e3d;
+    border: white solid 1px;
+    padding: 1px 5px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+}
+
+code {
+    background: #f8f8f8;
+    color: #e74c3c;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background: #778387;
+    color: #dfe6e9;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.img-container {
+    text-align: center;
+    background: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.dica {
+    background: #fff3cd;
+    border-left: 5px solid #ffeeba;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+mark {
+    background: #e67676;
+    color: #333;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 16px;
+}
+audio {
+    display: block;
+    margin: 20px auto;
+}
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 12px;
+}
+
+@font-face {
+        font-family: 'malam_poek';
+        src: url('Fonts/malam_poek/Malam Poek.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: 'Matcha Cih';
+        src: url('Fonts/matcha_cih/Matcha\ Cih.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+.fonte1{
+    font-family: 'malam_poek', cursive;
+}
+
+.fonte2{
+    font-family: 'Matcha Cih', cursive;
+}
+
+.exemploNunito {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+}
+
+#rodapé{
+    text-align: center;
+}
+
+.botão {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e52d2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.aviso_botão {
+    display: none;
+    color: #99a3e4;
+    font-weight: italic;
+}
+
+.botão:hover {
+    background-color: #c23636;
+}
+
+.botão:hover + .aviso_botão {
+    display: block; 
+}
+
+.botoes {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.links{
+    color: #3498db;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+.links:active{
+    color: #2c3e50;
+}
+
+.links:visited{
+    color: #925811;
+}
+
+.links::after { 
+/* Uma pseudo-elemento na pseudo classe */
+    content: " (🔗)";
+    font-size: 0.8em;
+    color: #95a5a6;
+}
+
+.boxesimages {
+    width: 30%;
+    height: auto;
+}

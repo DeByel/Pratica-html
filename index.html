@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon"
+            href="imagens/html.png" type="image/x-icon">
+        <title>Manual Prático de HTML5 e CSS3 - DeByel</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>HTML5 Semântico de byel né</h1>
+            <p>Consolidado das Atividades <strong>(curso em video)</strong> —
+                Material de Referência.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>1. Organização de Conteúdo (Headings)</h2>
+                <p>A hierarquia de <code>&lt;h1&gt;</code> a
+                    <code>&lt;h6&gt;</code>
+                    define a importância do assunto para
+                    navegadores e motores de busca.</p>
+                <h3>Exemplo Prático de Níveis:</h3>
+                <p>H1 é o título principal (use apenas um por página). H2 são
+                    capítulos e H3 são subseções.</p>
+                <div class="dica">
+                    <strong>Dica:</strong> Nunca escolha uma tag de título pelo
+                    tamanho da letra, mas sim pela
+                    relevância do texto.
+                </div>
+            </section>
+            <section>
+                <h2>2. Semântica de Texto</h2>
+                <p><strong>Destaque Forte:</strong> Use
+                    <code>&lt;strong&gt;</code>
+                    para dar importância real ao termo.</p>
+                <p><em>Ênfase:</em> Use <code>&lt;em&gt;</code> para indicar uma
+                    ênfase na leitura ou tom de voz.</p>
+                <p><mark>Marcação:</mark> Use <code>&lt;mark&gt;</code> para
+                    destacar trechos relevantes em uma busca ou
+                    revisão.</p>
+                <p><strong>Posicionamento Técnico:</strong></p>
+                <ul>
+                    <li>Subscrito (Baixo): H<sub>2</sub>O (Fórmulas
+                        químicas).</li>
+                    <li>Sobrescrito (Cima): 10<sup>2</sup> (Cálculos
+                        matemáticos).</li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. Inserção de Mídias (Imagens)</h2>
+                <p>A tag <code>&lt;img&gt;</code> requer dois atributos
+                    principais:
+                    <code>src</code> (origem) e <code>alt</code>
+                    (descrição acessível).</p>
+                <div class="img-container">
+                    <img src="imagens/asuna-sword-art-3840x2160-10486.png"
+                        alt="Ilustração da personagem Asuna usando um headset VR">
+                    <p><small>Exemplo de carregamento local.</small></p>
+                </div>
+                <div class="dica">
+                    <strong>Nota Técnica:</strong> O atributo <code>alt</code> é
+                    lido por softwares para cegos e ajuda no
+                    ranqueamento do Google.
+                </div>
+            </section>
+            <section>
+                <h2>4. Referências e Siglas</h2>
+                <p>Para citações curtas: <q>O código é poesia em movimento.</q>
+                    (A
+                    tag <code>&lt;q&gt;</code> insere as aspas
+                    automaticamente).</p>
+                <p>Para abreviações: Passe o mouse sobre <abbr
+                        title="Advanced Linux Sound Architecture">ALSA</abbr>
+                    para
+                    ver o
+                    significado (Atributo <code>title</code>).</p>
+                <p>Citação em Bloco (Longa):</p>
+                <blockquote cite="https://developer.mozilla.org">
+                    A semântica permite que máquinas compreendam o significado
+                    do
+                    conteúdo, melhorando a acessibilidade.
+                </blockquote>
+            </section>
+            <section>
+                <h2>5. Exibindo Código e Definições</h2>
+                <p>Para manter a formatação de um script (espaços e quebras),
+                    usamos
+                    <code>&lt;pre&gt;</code> aninhado com
+                    <code>&lt;code&gt;</code>:
+                </p>
+
+                <pre><code>function debyelSystem() {
+console.log("Sistema: Fedora Linux");
+console.log("Status: Operacional");
+}</code></pre>
+                <h3>Lista de Definição (Glossário):</h3>
+                <dl>
+                    <dt><code>&lt;dt&gt;</code> (Termo)</dt>
+                    <dd>Define o nome do item ou termo técnico.</dd>
+                    <dt><code>&lt;dd&gt;</code> (Descrição)</dt>
+                    <dd>Explica o que o termo acima significa.</dd>
+                </dl>
+            </section>
+            <section>
+                <h2>6. Estrutura Semântica de Layout</h2>
+                <p>Organize seu documento usando as tags semânticas para
+                    melhorar a
+                    legibilidade e SEO:</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Contém o título e
+                        informações
+                        introdutórias.</li>
+                    <li><code>&lt;nav&gt;</code>: Define a seção de navegação
+                        (links
+                        para outras páginas).</li>
+                    <li><code>&lt;main&gt;</code>: O conteúdo principal da
+                        página
+                        (deve ser único).</li>
+                    <li><code>&lt;aside&gt;</code>: Conteúdo complementar, como
+                        barras laterais ou anúncios.</li>
+                    <li><code>&lt;footer&gt;</code>: Informações de rodapé, como
+                        direitos autorais e contatos.</li>
+                </ul>
+                <p><strong>Importante:</strong> A estrutura semântica não é
+                    apenas
+                    para humanos, mas também para
+                    mecanismos de busca e leitores de tela, melhorando a
+                    acessibilidade e o SEO do seu site.</p>
+            </section>
+            <section>
+                <h2>7. Links Externos e Internos</h2>
+                <p>Links são atribuidos usando a tag <code>&lt;a&gt;</code>.
+                    seguindo pelo atributo de <code>href</code>:</p>
+                <h3>Exemplos:</h3>
+                <ul>
+                    <li><a href="https://www.firefox.com/pt-BR/">Instale o
+                            Browser
+                            Firefox</a></li>
+                    <li><a
+                            href="https://youtu.be/LeOVXQDsAIY?si=aG63e1ZbL1-xqjne">Link
+                            do vídeo (Links) do Guanabara</a></li>
+                </ul>
+                <p>Detalhe, os links abertos sobrepõem sua página; para abrir em
+                    uma
+                    nova aba, use o atributo
+                    <code>target="_blank"</code> junto a
+                    <code>rel="external"</code>.
+                </p>
+                <ul>
+                    <li><code>target="_blank"</code>: Instrui o navegador a
+                        abrir um
+                        link em uma nova aba ou janela.</li>
+                    <li><code>rel="external"</code>: Indica que o destino do
+                        link é
+                        um site externo, ou seja, não faz parte do
+                        domínio atual.</li>
+                </ul>
+                <h3>Exemplo</h3>
+                <ul>
+                    <li>Esse link vai abrir em outra aba, fora da sua página: <a
+                            href="https://www.google.com/" target="_blank"
+                            rel="external">Acesse o Google</a></li>
+                </ul>
+                <div class="dica">
+                    <strong>Obs:</strong> Existem outros tipos de
+                    <code><strong>&lt;rel&gt;</strong></code> que são
+                    importantes
+                    dá uma averiguada, como esses aqui:
+                </div>
+                <h3>Principais Relacionamentos (Atributo <code>rel</code>)</h3>
+                <ul>
+                    <li><strong>Para <code>&lt;link&gt;</code> (links externos e
+                            recursos):</strong>
+                        <ul type="disc">
+                            <li><code>stylesheet</code>: Vincula uma folha de
+                                estilo
+                                CSS.</li>
+                            <li><code>icon</code>: Define o favicon da
+                                página.</li>
+                            <li><code>alternate</code>: Indica uma versão
+                                alternativa do documento (ex: RSS feed,
+                                tradução).
+                            </li>
+                            <li><code>canonical</code>: Define a URL oficial
+                                para
+                                SEO, evitando conteúdo duplicado.</li>
+                            <li><code>manifest</code>: Vincula o manifesto do
+                                aplicativo da web (manifest.json).</li>
+                            <li><code>author</code>: Link para o autor do
+                                documento.</li>
+                            <li><code>license</code>: Link para a licença do
+                                conteúdo.</li>
+                            <li><code>help</code>: Link para ajuda ou
+                                documentação.</li>
+                            <li><code>search</code>: Link para uma página de
+                                busca.</li>
+                            </ul type="disc">
+                        </li>
+                        <li><strong>Segurança em Links Externos
+                                (<code>&lt;a&gt;</code> com
+                                <code>target="_blank"</code>):</strong>
+                            <ul type="disc">
+                                <li><code>noopener</code>: Impede que a nova
+                                    página
+                                    acesse <code>window.opener</code>,
+                                    protegendo
+                                    contra ataques de segurança.</li>
+                                <li><code>noreferrer</code>: Impede a passagem
+                                    do
+                                    cabeçalho Referer e age como
+                                    <code>noopener</code>.
+                                </li>
+                                <li><code>nofollow</code>: Instrui motores de
+                                    busca
+                                    a não seguirem o link (útil para links pagos
+                                    ou
+                                    não confiáveis).</li>
+                                </ul type="disc">
+                            </li>
+                            <li><strong>Performance e Pré-carregamento
+                                    (<code>&lt;link&gt;</code>):</strong>
+                                <ul type="disc">
+                                    <li><code>preload</code>: Solicita que um
+                                        recurso (fontes, scripts) seja baixado
+                                        antecipadamente por
+                                        ser crítico.</li>
+                                    <li><code>preconnect</code>: Inicia a
+                                        conexão
+                                        com um servidor (DNS, TCP, TLS) antes da
+                                        solicitação.
+                                    </li>
+                                    <li><code>prefetch</code>: Baixa recursos
+                                        que
+                                        podem ser necessários em navegações
+                                        futuras.</li>
+                                    <li><code>dns-prefetch</code>: Resolve o DNS
+                                        de
+                                        um domínio antecipadamente.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Navegação
+                                    (<code>&lt;link&gt;</code>):</strong>
+                                <ul type="disc">
+                                    <li><code>next</code>: Indica o próximo
+                                        documento em uma série (paginação).</li>
+                                    <li><code>prev</code>: Indica o documento
+                                        anterior em uma série (paginação).</li>
+                                    <li><code>first</code>: Indica o primeiro
+                                        documento em uma série.</li>
+                                    <li><code>last</code>: Indica o último
+                                        documento
+                                        em uma série.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Esses atributos são cruciais para a estrutura,
+                            acessibilidade, segurança e SEO (Search Engine
+                            Optimization)
+                            de um site moderno.</p>
+                        <h3>Links Internos</h3>
+                        <p>Links internos apontam para outras páginas do mesmo
+                            site,
+                            formando uma <strong>Navegação</strong>.</p>
+                        <h4>Exemplo:</h4>
+                        <ul>
+                            <li><a href="exemplo.html" rel="nofollow">Exemplo de
+                                    link interno (exemplo.html)</a></li>
+                            <!-- esse "nofollow" impede que o Google indexe o link -->
+                            <li><a href="outraPagina.html" rel="nofollow">Outro
+                                    link
+                                    interno (outraPagina.html)</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>8. Downloads</h2>
+                        <p>Para realizar <strong>downloads</strong> de arquivos,
+                            utilize o atributo <code>download</code> no elemento
+                            <code>&lt;a&gt;</code>.
+                        </p>
+                        <ul>
+                            <li><a href="arquivo.pdf"
+                                    download="sla o que é essa porra.pdf">Download
+                                    do arquivo PDF</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <!--essa section é literalmente tiração de onda com luan né man-->
+                        <h2>Luan é viado</h2>
+                        <p>luan é muito viado cara</p>
+                        <ul>
+                            <li><a href="luan-e-viado.pdf"
+                                    download="luan-e-viado.pdf">Download da
+                                    viadagem
+                                    de Luan</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>imagens dinamicas</h2>
+                        <p>Para cada dispositivo ter a melhor experiência em
+                            cada
+                            layout é necessario usar imagens responsivas,
+                            para celulares com <code>300px</code> por
+                            <code>300px</code> , para tablets com
+                            <code>500px</code>
+                            por
+                            <code>500px</code>, para pc (notebook) com
+                            <code>700px</code> por
+                            <code>700px</code> para imagens médias
+                            e <code>1000px</code> para imagens grandes escaladas
+                            para <strong>computadores (desktop)</strong>.
+                        </p>
+                        <picture>
+                            <source media="(max-width: 700px)"
+                                srcset="imagens/Imagem_pequena.png">
+                            <source media="(max-width: 1000px)"
+                                srcset="imagens/Imagem_media.png">
+                            <img src="imagens/Imagem_grande.png"
+                                alt="Imagem para desktop">
+                        </picture>
+                    </section>
+                    <section>
+                        <!--Aqui é bom ter outros formatos de arquivos para ter o maximo de compatibilidade com os navegadores-->
+                        <h2>Áudio</h2>
+                        <p>Aqui é a reprodução de áudio usando a tag
+                            <code>&lt;audio&gt;</code> junto a tag
+                            <code>&lt;source&gt;</code>:</p>
+                        <audio controls
+                            metadata="Meeting Point - Kevin MacLeod">
+                            <!--bom usar o meta data para uma otimização  no carregamento do site-->
+                            <source src="audio/Meeting Point.mp3"
+                                type="audio/mpeg">
+                            <source src="audio/Meeting Point.ogg"
+                                type="audio/ogg">
+                            <source src="audio/Meeting Point.wav"
+                                type="audio/wav">
+                            <!--o wav é um formato de áudio pesado, o que significa que ele mantém a qualidade original do som, mas geralmente resulta em arquivos maiores. É ideal para edição de áudio ou quando a qualidade é uma prioridade máxima.-->
+                            <p>Seu navegador não suporta áudio, <a
+                                    href="audio/Meeting Point.mp3"
+                                    download>clique
+                                    aqui</a>
+                                para baixar.</p>
+                        </audio>
+                    </section>
+                    <section>
+                        <h2>Vídeo</h2>
+                        <!--essa forma de hospedagem de video consome muita largura de banda, mesmo no arquivo menor-->
+                        <p>Videos podem ser incorporados usando a tag
+                            <code>&lt;video&gt;</code>:</p>
+                        <video width="400" height="300" controls>
+                            <source src="videos/projeto dos games.mp4"
+                                type="video/mp4">
+                        </video>
+                        <h3>Vídeo com capa</h3>
+                        <video width="400" height="300" controls
+                            poster="imagens/eu não quero estudar.png">
+                            <!--imagem grande demais, fiz assim por preguiça-->
+                            <source src="videos/projeto dos games.mp4"
+                                type="video/mp4">
+                        </video>
+                    </section>
+                    <section>
+                        <h2>Videos externos</h2>
+                        <p>Para incorporar vídeos de plataformas como YouTube,
+                            use a tag <code>&lt;iframe&gt;</code>, simplesmente
+                            copiando direto
+                            da plataforma do google:</p>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/EGF-GYxIkak?si=uZtOiPICZdJXzBat"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </section>
+                    <h1 style="text-align:center;">Css: Trabalhando com
+                        estilos</h1>
+                    <hr>
+                    <section>
+                        <h2>1. Introdução ao CSS</h2>
+                        <p>CSS (Cascading Style Sheets) é a linguagem de estilos
+                            usada
+                            para controlar a aparência de um documento HTML. Ele
+                            permite separar o conteúdo (HTML) da apresentação
+                            (estilos), facilitando a manutenção e a consistência
+                            do
+                            design.</p>
+                        <h3>Exemplo de CSS:</h3>
+                        <pre><code>/* Estilo para o corpo da página */
+            body {
+                background-color: #f0f0f0; /* Cor de fundo */
+                font-family: Arial, sans-serif; /* Fonte */
+                color: #333; /* Cor do texto */
+            }    </pre></code>
+                </section>
+                <section>
+                    <h2>fontes</h2>
+                    <p>Para usar fontes personalizadas, utilize a regra
+                        <code>@font-face</code>:</p>
+                    <pre><code>@font-face {
+                font-family: 'MinhaFontePersonalizada'; /* Nome da fonte */
+                src: url('fonts/MinhaFontePersonalizada.woff2') format('woff2'); /* Caminho para o arquivo da fonte */
+            }</code></pre>
+                    <p>no uso em pratica: <code>font-family: 'Segoe UI', Tahoma,
+                            Geneva, Verdana, sans-serif;</code> que inclusive
+                        está
+                        nesse documento</p>
+                    <h3>Medidas</h3>
+                    <p>As medidas em CSS podem ser expressas em unidades
+                        absolutas
+                        <code>(px, cm, in)</code> ou relativas <code>(em, rem,
+                            %,
+                            vw, vh)</code>.</p>
+                    <h3>Peso da fonte</h3>
+                    <p>O peso da fonte é controlado pela propriedade
+                        <code>font-weight</code>, que pode ser definida como
+                        um valor numérico (100 a 900) ou palavras-chave
+                        <mark>(normal, bold, bolder, lighter)</mark>.</p>
+                    Obs: O peso da fonte pode variar dependendo da família de
+                    fontes
+                    utilizada, e nem todas as fontes suportam todos os
+                    pesos.
+                    <h3>Shorthand</h3>
+                    <p>Propriedades de CSS podem ser combinadas usando a sintaxe
+                        abreviada (shorthand). Por exemplo, a propriedade
+                        <code>margin</code> pode definir as margens superior,
+                        direita, inferior e esquerda em uma única linha</p>
+                    <p>no exemplo de fontes é usado a propriedade
+                        <code>font</code>
+                        para definir várias
+                        características da fonte em uma única declaração:</p>
+                    <code>font: italic small-caps bold 16px/1.5 'Arial',
+                        sans-serif;</code>
+                </p>
+                <p>Como dito, nesse exemplo para as fontes, ela segue uma
+                    sequencia
+                    de:
+                    <mark>font-style -> font-weight -> font-size ->
+                        font-family</mark>, abaixo a mais exemplos.
+                    <ul>
+                        <li><code>font-style</code>: Define o estilo da fonte
+                            (normal, italic, oblique).</li>
+                        <li><code>font-variant</code>: Define a variante da
+                            fonte (normal, small-caps).</li>
+                        <li><code>font-weight</code>: Define o peso da fonte
+                            (normal, bold, bolder, lighter ou valores numéricos
+                            de 100 a 900).</li>
+                        <li><code>font-size</code>: Define o tamanho da fonte
+                            (ex: 16px, 1em).</li>
+                        <li><code>line-height</code>: Define a altura da linha
+                            (ex: 1.5).</li>
+                        <li><code>font-family</code>: Define a família de
+                            fontes (ex: 'Arial', sans-serif).</li>
+                    </ul>
+                </p>
+                <h3 style="color: #3498db;">Google Fonts</h3>
+                <p>Para utilizar fontes do Google Fonts, basta adicionar o link
+                    para
+                    a fonte no cabeçalho do documento HTML:</p>
+                <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"&gt;</code></pre>
+                <p>Em seguida, utilize a propriedade <code>font-family</code>
+                    para
+                    aplicar a fonte ao elemento desejado:</p>
+                <pre><code>body {
+                font-family: 'Roboto', sans-serif;
+            }</code></pre>
+                <h3>Ex:</h3>
+                <p class="exemploNunito">Esse parágrafo usa a fonte Nunito, que
+                    foi
+                    importada do Google
+                    Fonts.</p>
+                <h3>formatos</h3>
+                <p>Os formatos de fonte usando a regra <code>@font-face</code>
+                    mais
+                    comuns são:</p>
+                <ul>
+                    <li><code>.woff</code>: Web Open Font Format, suportado por
+                        maioria das navegadores.</li>
+                    <li><code>.woff2</code>: Versão atualizada do WOFF, com
+                        melhor
+                        compressão.</li>
+                    <li><code>.ttf</code>: TrueType Font, amplamente
+                        suportado.</li>
+                    <li><code>.eot</code>: Embedded OpenType, usado
+                        principalmente
+                        para compatibilidade com o Internet Explorer.</li>
+                    <li><code>.svg</code>: Fontes em formato SVG, usadas
+                        principalmente para ícones e gráficos vetoriais.</li>
+                    <li><code>.otf</code>: OpenType Font, suporta recursos
+                        avançados
+                        de tipografia.</li>
+                </ul>
+                <h3>Exemplo</h3>
+                <pre><code>@font-face {
+                font-family: 'MinhaFontePersonalizada';
+                src: url('fonts/MinhaFontePersonalizada.woff2') format('woff2'),
+             url('fonts/MinhaFontePersonalizada.woff') format('woff'),
+             url('fonts/MinhaFontePersonalizada.ttf') format('truetype');
+            }</code></pre>
+                <h3>exemplo visual</h3>
+                <p>Os exemplos visuais das fontes personalizadas aparecerão
+                    aqui.</p>
+                <p class="fonte1">Eu te amo Anna</p>
+                <p class="fonte2">Eu te amo Anna</p>
+            </section>
+            <section>
+                <h2>Seletores</h2>
+                <p>Seletores são usados para selecionar os elementos HTML que
+                    queremos estilizar. Existem vários tipos de seletores,
+                    como:</p>
+                <ul>
+                    <li><code>Seletores de Tipo</code>: Selecionam elementos
+                        pelo
+                        nome da tag (ex: <code>p</code>, <code>h1</code>).</li>
+                    <li><code>Seletores de Classe</code>: Selecionam elementos
+                        por
+                        classe (ex: <code>.minha-classe</code>).</li>
+                    <li><code>Seletores de ID</code>: Selecionam um elemento
+                        único
+                        por ID (ex: <code>#meu-id</code>).</li>
+                    <li><code>Seletores de Atributo</code>: Selecionam elementos
+                        com
+                        base em atributos (ex:
+                        <code>input[type="text"]</code>).</li>
+                    <li><code>Seletores de Pseudo-classe</code>: Selecionam
+                        elementos em um estado específico (ex:
+                        <code>a:hover</code>
+                        para links quando o mouse está sobre eles).</li>
+                    <li><code>Seletores de Pseudo-elemento</code>: Selecionam
+                        partes
+                        específicas de um elemento (ex:
+                        <code>p::first-line</code>
+                        para estilizar a primeira linha de um parágrafo).</li>
+                </ul>
+                <div class="dica">
+                    <h3>A Pseudo-classe merece uma atenção especial</h3>
+                    <p>As pseudo-classes permitem que você estilize elementos
+                        com
+                        base em seu estado ou posição. Alguns exemplos comuns
+                        incluem:</p>
+                </div>
+                <pre><code>div:hover { background-color: lightgray; }</code></pre>
+
+            </section>
+
+            <section>
+                <h2>pseudo-classes (detalhado)</h2>
+                <p>As pseudo-classes são usadas para definir um estado especial
+                    de um elemento. Elas são precedidas por dois pontos
+                    (<code>:</code>) e permitem estilizar elementos com base em
+                    interações do usuário, posição no documento ou outros
+                    critérios. Aqui estão algumas pseudo-classes comuns:</p>
+
+                <h3>Exemplo com 1 botão</h3>
+
+                <div class="botoes">
+                    <a href="#" class="botão">Botão</a>
+                    <p class="aviso_botão">Se clicado, a pagina volta ao
+                        começo</p>
+                </div>
+
+                <h3>Exemplos com links</h3>
+
+                <ul>
+                    <li><a href="https://www.youtube.com/@AnnaLenda"
+                            rel="external" target="_blank" class="links">Youtube
+                            Do meu amor</a></li>
+                    <li><a href="https://www.instagram.com/___anaxs/"
+                            rel="external" target="_blank"
+                            class="links">Instagram Do meu amor</a></li>
+                    <li><a href="https://www.tiktok.com/@__happykkj"
+                            rel="external" target="_blank" class="links">Tiktok
+                            Do meu amor</a></li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h2>Box Model</h2>
+                <p>O modelo de caixa (Box Model) é um conceito fundamental em
+                    CSS que descreve a estrutura de um elemento HTML. Ele é
+                    composto por quatro áreas:</p>
+                <ul>
+                    <li><code>Content</code>: O conteúdo real do elemento
+                        (texto,
+                        imagens, etc.).</li>
+                    <li><code>Padding</code>: O espaço entre o conteúdo e a
+                        borda
+                        do elemento.</li>
+                    <li><code>Border</code>: A borda que envolve o padding e o
+                        conteúdo.</li>
+                    <li><code>Margin</code>: O espaço externo que separa o
+                        elemento de outros elementos.</li>
+                    <li><code>border</code> O espaço delimitado pela borda </li>
+                </ul>
+                <p>A compreensão do Box Model é essencial para controlar o
+                    layout e a aparência dos elementos em uma página web.</p>
+                <p class="dica">Vários elementos dentro de uma página web são
+                    considerados boxes, sendo inline ou box-level</p>
+                <img src="imagens/Todos os boxes.png" alt="Todos os boxes"
+                    class="img-container ; boxesimages">
+                <h2>Tipos de caixas</h2>
+                <h3>box-level</h3>
+                <p>usado principalmente com a tag <code>div</code></p>
+                <img class="img-container ; boxesimages"
+                    src="imagens/box-level.png" alt="Elementos box-level">
+                <p>Elementos que ocupam toda a largura disponível e começam em
+                    uma nova linha.</p>
+                <h3>inline-level</h3>
+                <p>usado principalmente com a tag <code>span</code></p>
+                <img class="img-container : boxesimages"
+                    src="imagens/inline-level.png" alt="Elementos inline-level">
+                <p>Elementos que não começam em uma nova linha e ocupam apenas o
+                    espaço necessário.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <hr>
+            <p id="rodapé">Material produzido para fins didáticos | Dev:
+                <strong>DeByel</strong>.</p>
+        </footer>
+    </body>
+
+</html>
