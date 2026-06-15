@@ -13,14 +13,73 @@
             border: 2px solid blue;
             margin: 10px;
         }
+
+        /* Box-level (Não mata linha) */
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /*
+
+            As shortsands dessas propriedades.
+
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            padding: 10px;
+
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+            
+            */
+        }
+
+        /* inline-level (mata linha) */
+        a { 
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        /* O "auto" é um meio de pagina calculavel para elementos que não são textuais */
+
     </style>
 </head>
 <body>
     <h1 class="exemplo-caixas">Exemplo de Caixas</h1>
     <p class="exemplo-caixas">Este é um exemplo de como as caixas funcionam em HTML e CSS.</p>
     <h2>Com uma atenção como funciona as bordas do conteúdo</h2>
-    <p class="exemplo-caixas">A borda é a linha que envolve o conteúdo e o preenchimento de um elemento. Ela pode ser personalizada usando as propriedades CSS, como <code>border-width</code>, <code>border-style</code> e <code>border-color</code>.</p>
-    <p class="exemplo-caixas">Alem de outras bordas, é possível aplicar efeitos especiais, como bordas arredondadas (<code>border-radius</code>) ou bordas com sombra (<code>box-shadow</code>).</p>
-    <p class="exemplo-caixas">ou bordas mais simples como: borde-width, border-style e border-color.</p>
+    <p>A borda é a linha que envolve o conteúdo e o preenchimento de um elemento. Ela pode ser personalizada usando as propriedades CSS, como <code>border-width</code>, <code>border-style</code> e <code>border-color</code>.</p>
+    <p>Alem de outras bordas, é possível aplicar efeitos especiais, como bordas arredondadas (<code>border-radius</code>) ou bordas com sombra (<code>box-shadow</code>).</p>
+    <p>ou bordas mais simples como: <a href="">borde-width, border-style e border-color.</a></p>
+    <p>tipo isso</p>
+    <h1 class="">Outro Título</h1>
 </body>
 </html>
