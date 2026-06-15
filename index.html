@@ -276,10 +276,10 @@ console.log("Status: Operacional");
                             formando uma <strong>Navegação</strong>.</p>
                         <h4>Exemplo:</h4>
                         <ul>
-                            <li><a href="exemplo.html" rel="nofollow">Exemplo de
+                            <li><a href="pages/outraPagina.html" rel="nofollow">Exemplo de
                                     link interno (exemplo.html)</a></li>
                             <!-- esse "nofollow" impede que o Google indexe o link -->
-                            <li><a href="outraPagina.html" rel="nofollow">Outro
+                            <li><a href="pages/outraPagina.html" rel="nofollow">Outro
                                     link
                                     interno (outraPagina.html)</a></li>
                         </ul>
@@ -570,7 +570,7 @@ body {
                         começo</p>
                 </div>
 
-                <h3>Exemplos com links</h3>
+                <h3>Exemplos com links</h3
 
                 <ul>
                     <li><a href="https://www.youtube.com/@AnnaLenda"
@@ -608,22 +608,25 @@ body {
                     layout e a aparência dos elementos em uma página web.</p>
                 <p class="dica">Vários elementos dentro de uma página web são
                     considerados boxes, sendo inline ou box-level</p>
-                <img src="imagens/Todos os boxes.png" alt="Todos os boxes"
-                    class="img-container ; boxesimages">
+                
                 <h2>Tipos de caixas</h2>
                 <h3>box-level</h3>
-                <p>usado principalmente com a tag <code>div</code></p>
-                <img class="img-container ; boxesimages"
-                    src="imagens/box-level.png" alt="Elementos box-level">
-                <p>Elementos que ocupam toda a largura disponível e começam em
+                <p>Usado principalmente com a tag <code>div</code>, elementos que ocupam toda a largura disponível e começam em
                     uma nova linha.</p>
                 <h3>inline-level</h3>
-                <p>usado principalmente com a tag <code>span</code></p>
-                <img class="img-container : boxesimages"
-                    src="imagens/inline-level.png" alt="Elementos inline-level">
-                <p>Elementos que não começam em uma nova linha e ocupam apenas o
+                <p>Usado principalmente com a tag <code>span</code>, elementos que não começam em uma nova linha e ocupam apenas o
                     espaço necessário.</p>
-            </section>
+                    <h3>Exemplo</h3>
+                    <pre>
+<code>
+&lt;div class="box-level"&gt;
+    &lt;p&gt;Este é um elemento box-level (div).&lt;/p&gt;
+    &lt;span class="inline-level"&gt;Este é um elemento inline-level (span).&lt;/span&gt;
+&lt;/div&gt;
+</code>
+                    </pre>
+                    <a href="pages/exemplodecaixas.html" rel="nofollow">O exemplo de caixas</a> para uma demonstração visual dos tipos de caixas.</p>
+                </section>
 
         </main>
 
