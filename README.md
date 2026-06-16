@@ -1,3 +1,4 @@
+<img src="images/Boasvindas" alt="Imagem de boas vindas">
 <h1>O que o projeto faz?</h1>
 Este projeto é um guia de referência pessoal e prático contendo o consolidado das atividades e conceitos aprendidos no curso de Front-End (Curso em Vídeo). O objetivo é centralizar os fundamentos de semântica, mídias e estilização em uma única página scannável.
 
