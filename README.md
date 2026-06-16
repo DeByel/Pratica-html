@@ -1,3 +1,4 @@
+<img src="images/Boasvindas.png" alt="Imagem de boas vindas">
 <h1>O que o projeto faz?</h1>
 Este projeto é um guia de referência pessoal e prático contendo o consolidado das atividades e conceitos aprendidos no curso de Devenvolvimento Web (Curso em Vídeo). O objetivo é Concretizar os fundamentos de semântica, mídias e estilização em uma página simples.
 
@@ -33,5 +34,6 @@ Downloads: Utilização do atributo download para baixar arquivos direto do nave
 <ul>
 <li>HTML5 (Foco em semântica e acessibilidade)</li>
 <li>CSS3 (Arquitetura de caixas, fontes e estados)</li>
+<li>Java Script (Logica)</li>
 <li>Google Fonts (Fontes externas integradas)</li>
 </ul>
