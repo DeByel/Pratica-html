@@ -1,5 +1,5 @@
 <h1>O que o projeto faz?</h1>
-Este projeto é um guia de referência pessoal e prático contendo o consolidado das atividades e conceitos aprendidos no curso de Front-End (Curso em Vídeo). O objetivo é centralizar os fundamentos de semântica, mídias e estilização em uma única página scannável.
+Este projeto é um guia de referência pessoal e prático contendo o consolidado das atividades e conceitos aprendidos no curso de Devenvolvimento Web (Curso em Vídeo). O objetivo é Concretizar os fundamentos de semântica, mídias e estilização em uma página simples.
 
 <h2>1. Estrutura e Semântica HTML5</h2>
 Hierarquia de Títulos: Organização correta de &lt;h1&gt; a &lt;h6&gt;.
