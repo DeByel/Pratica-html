@@ -34,5 +34,6 @@ Downloads: Utilização do atributo download para baixar arquivos direto do nave
 <ul>
 <li>HTML5 (Foco em semântica e acessibilidade)</li>
 <li>CSS3 (Arquitetura de caixas, fontes e estados)</li>
+<li>Java Script (Logica)</li>
 <li>Google Fonts (Fontes externas integradas)</li>
 </ul>
